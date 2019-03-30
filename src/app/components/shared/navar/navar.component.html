@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand" href="index.html"style="color:white">
+  <a class="navbar-brand" [routerLink]="['home']"style="color:white">
       <img src="assets/img/user.png" width="30" height="30" class="d-inline-block align-top">
       Semillero de seguridad
   </a>
@@ -8,9 +8,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-          <a class="nav-item nav-link" href="pages/event_registration.html" style="color:white">Eventos</a>
-          <a class="nav-item nav-link" href="pages/members.html" style="color:white">Integrates</a>
-          <a class="nav-item nav-link" href="pages/AboutUs.html" tabindex="-1" aria-disabled="true" style="color:white">¿Quienes somos?</a>
+          <a class="nav-item nav-link" [routerLink]="['event']" style="color:white">Eventos</a>
+          <a class="nav-item nav-link" [routerLink]="['about']" tabindex="-1" aria-disabled="true" style="color:white">¿Quienes somos?</a>
       </div>
   </div>
 </nav>
